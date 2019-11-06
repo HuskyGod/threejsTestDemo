@@ -129,7 +129,6 @@ var DEMO = {
 
     var geometry = new THREE.BoxGeometry( 50, 500, 50 );
     new THREE.TextureLoader().load( 'assets/img/tree.jpg', function (texture) {
-      console.log('texture', texture)
       var material = new THREE.MeshPhongMaterial( {color: 0x611a00, emissiveMap: texture} );
       var cube = new THREE.Mesh( geometry, material );
       tree.add( cube );
